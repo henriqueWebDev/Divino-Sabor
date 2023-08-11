@@ -1,0 +1,5 @@
+{
+    "hamburgers": [
+        {"imgUrl": "../../../public/images/burgers/X-SIMPLES.webp", "name": "X-SIMPLES", "description": "Pão de hambúrguer, Alface, Tomate, Queijo, Carne de hambúrguer", "price": "25.50"}
+    ]
+}

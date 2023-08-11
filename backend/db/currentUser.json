@@ -1,0 +1,8 @@
+{
+    "status": [
+        {"loginStatus": "logged out"}
+    ],
+    "currentUser": [
+        {"name": "", "email": "", "password": ""}
+    ]
+}
