@@ -1,16 +1,16 @@
 <template>
   <q-page padding>
-    <FormLogin />
+    <FormCreateAccount />
   </q-page>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import FormLogin from '../components/LoginComponents/Form.vue'
+import FormCreateAccount from '../components/CreateAccountComponents/Form.vue'
 export default defineComponent({
-  name: 'LoginPage',
+  name: 'CreateAccountPage',
   components: {
-    FormLogin
+    FormCreateAccount
   }
 })
 </script>

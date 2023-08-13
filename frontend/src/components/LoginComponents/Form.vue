@@ -25,7 +25,7 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
 export default defineComponent({
-  name: 'FormVue',
+  name: 'FormLogin',
   data() {
     return {
       visiblePassword: ref(true),
