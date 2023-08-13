@@ -47,10 +47,10 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   .titles-font {
     font-family: 'Bahiana';
-  }
+  } 
   #loginRouter {
     text-decoration: none;
   }

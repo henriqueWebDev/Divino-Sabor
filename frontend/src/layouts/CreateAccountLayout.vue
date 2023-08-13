@@ -22,3 +22,12 @@
   
     </q-layout>
   </template>
+
+<style>
+  .titles-font {
+    font-family: 'Bahiana';
+  }
+  #homeRouter {
+    text-decoration: none;
+  }
+</style>
