@@ -6,16 +6,16 @@
       />
       <q-input v-model="form.password" filled :type="visiblePassword ? 'password' : 'text'" label="Senha" color="orange-12" class="fit fit q-mt-lg" 
       :rules="[val => val && val.length > 0 || 'Certifique-se de que a senha não esteja em branco.']" >
-          <template v-slot:append>
-            <q-icon
-              :name="visiblePassword ? 'visibility_off' : 'visibility'"
-              class="cursor-pointer"
-              @click="visiblePassword = !visiblePassword"
-            />
-          </template>
-        </q-input>
-      <div class="flex justify-center align-center justify-center-media">
-        <q-btn type="submit" label="Entrar" class="q-mt-lg text-body-1" color="orange-12" style="width: 50vw;"></q-btn>
+        <template v-slot:append>
+          <q-icon
+            :name="visiblePassword ? 'visibility_off' : 'visibility'"
+            class="cursor-pointer"
+            @click="visiblePassword = !visiblePassword"
+          />
+        </template>
+      </q-input>
+      <div class="flex justify-center align-center">
+        <q-btn type="submit" label="Entrar" class="q-mt-lg text-body-1 desktop-submit-button-width mobile-submit-button-width" color="orange-12"></q-btn>
       </div>
     </form>
     <p class="text-right q-mx-sm mx-auto">Não possui uma conta? <router-link to="/createAccount" class="no-text-decoration">Crie uma aqui!</router-link></p>
@@ -43,11 +43,14 @@ export default defineComponent({
     text-decoration: none;
   }
   .mx-auto {
-      margin: 0vh auto;
-    }
+    margin: 0vh auto;
+  }
+  .desktop-submit-button-width {
+    width: 25vw;
+  }
   @media (max-width: 760px) {
-    .justify-center-media {
-      justify-content: center;
+    .mobile-submit-button-width {
+      width: 70vw;
     }
   }
 </style>
